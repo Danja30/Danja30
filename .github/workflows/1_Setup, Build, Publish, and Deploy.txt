@@ -1,0 +1,154 @@
+2022-09-14T05:40:11.3756281Z Requested labels: ubuntu-latest
+2022-09-14T05:40:11.3756319Z Job defined at: Danlachapelle/Danlachapelle/.github/workflows/google.yml@refs/heads/main
+2022-09-14T05:40:11.3756339Z Waiting for a runner to pick up this job...
+2022-09-14T05:40:11.6705054Z Job is waiting for a hosted runner to come online.
+2022-09-14T05:40:16.4349459Z Job is about to start running on the hosted runner: Hosted Agent (hosted)
+2022-09-14T05:40:19.1766082Z Current runner version: '2.296.2'
+2022-09-14T05:40:19.1803769Z ##[group]Operating System
+2022-09-14T05:40:19.1804689Z Ubuntu
+2022-09-14T05:40:19.1805089Z 20.04.5
+2022-09-14T05:40:19.1805415Z LTS
+2022-09-14T05:40:19.1805816Z ##[endgroup]
+2022-09-14T05:40:19.1806342Z ##[group]Runner Image
+2022-09-14T05:40:19.1806768Z Image: ubuntu-20.04
+2022-09-14T05:40:19.1807362Z Version: 20220905.1
+2022-09-14T05:40:19.1808121Z Included Software: https://github.com/actions/runner-images/blob/ubuntu20/20220905.1/images/linux/Ubuntu2004-Readme.md
+2022-09-14T05:40:19.1808821Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu20%2F20220905.1
+2022-09-14T05:40:19.1809445Z ##[endgroup]
+2022-09-14T05:40:19.1809864Z ##[group]Runner Image Provisioner
+2022-09-14T05:40:19.1810322Z 1.0.0.0-main-20220907-1
+2022-09-14T05:40:19.1810684Z ##[endgroup]
+2022-09-14T05:40:19.1812777Z ##[group]GITHUB_TOKEN Permissions
+2022-09-14T05:40:19.1813919Z Contents: read
+2022-09-14T05:40:19.1814586Z Metadata: read
+2022-09-14T05:40:19.1815649Z ##[endgroup]
+2022-09-14T05:40:19.1820568Z Secret source: Actions
+2022-09-14T05:40:19.1821349Z Prepare workflow directory
+2022-09-14T05:40:19.3267942Z Prepare all required actions
+2022-09-14T05:40:19.3496084Z Getting action download info
+2022-09-14T05:40:19.6260368Z Download action repository 'actions/checkout@v3' (SHA:2541b1294d2704b0964813337f33b291d3f8596b)
+2022-09-14T05:40:21.0318622Z Download action repository 'google-github-actions/auth@v0' (SHA:dac4e13deb3640f22e3ffe758fd3f95e6e89f712)
+2022-09-14T05:40:22.0557616Z Download action repository 'google-github-actions/get-gke-credentials@v0' (SHA:054fdb05e32039f72764f03e69e6acb20caa6f56)
+2022-09-14T05:40:23.5919662Z ##[group]Run actions/checkout@v3
+2022-09-14T05:40:23.5919993Z with:
+2022-09-14T05:40:23.5920443Z   repository: Danlachapelle/Danlachapelle
+2022-09-14T05:40:23.5921316Z   token: ***
+2022-09-14T05:40:23.5921705Z   ssh-strict: true
+2022-09-14T05:40:23.5921957Z   persist-credentials: true
+2022-09-14T05:40:23.5922204Z   clean: true
+2022-09-14T05:40:23.5922419Z   fetch-depth: 1
+2022-09-14T05:40:23.5922632Z   lfs: false
+2022-09-14T05:40:23.5922845Z   submodules: false
+2022-09-14T05:40:23.5923074Z   set-safe-directory: true
+2022-09-14T05:40:23.5923311Z env:
+2022-09-14T05:40:23.5923534Z   PROJECT_ID: 
+2022-09-14T05:40:23.5923777Z   GAR_LOCATION: us-central1
+2022-09-14T05:40:23.5924023Z   GKE_CLUSTER: cluster-1
+2022-09-14T05:40:23.5924271Z   GKE_ZONE: us-central1-c
+2022-09-14T05:40:23.5924511Z   DEPLOYMENT_NAME: gke-test
+2022-09-14T05:40:23.5924756Z   REPOSITORY: samples
+2022-09-14T05:40:23.5924996Z   IMAGE: static-site
+2022-09-14T05:40:23.5925224Z ##[endgroup]
+2022-09-14T05:40:23.9612984Z Syncing repository: Danlachapelle/Danlachapelle
+2022-09-14T05:40:23.9615524Z ##[group]Getting Git version info
+2022-09-14T05:40:23.9616245Z Working directory is '/home/runner/work/Danlachapelle/Danlachapelle'
+2022-09-14T05:40:23.9616847Z [command]/usr/bin/git version
+2022-09-14T05:40:23.9780497Z git version 2.37.3
+2022-09-14T05:40:23.9825388Z ##[endgroup]
+2022-09-14T05:40:23.9853073Z Temporarily overriding HOME='/home/runner/work/_temp/bf3b788d-e0b5-4d8f-b180-b0c44ee41d71' before making global git config changes
+2022-09-14T05:40:23.9856099Z Adding repository directory to the temporary git global config as a safe directory
+2022-09-14T05:40:23.9862946Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Danlachapelle/Danlachapelle
+2022-09-14T05:40:23.9929856Z Deleting the contents of '/home/runner/work/Danlachapelle/Danlachapelle'
+2022-09-14T05:40:23.9937200Z ##[group]Initializing the repository
+2022-09-14T05:40:23.9943718Z [command]/usr/bin/git init /home/runner/work/Danlachapelle/Danlachapelle
+2022-09-14T05:40:24.0072066Z hint: Using 'master' as the name for the initial branch. This default branch name
+2022-09-14T05:40:24.0087869Z hint: is subject to change. To configure the initial branch name to use in all
+2022-09-14T05:40:24.0089317Z hint: of your new repositories, which will suppress this warning, call:
+2022-09-14T05:40:24.0089682Z hint: 
+2022-09-14T05:40:24.0090448Z hint: 	git config --global init.defaultBranch <name>
+2022-09-14T05:40:24.0090752Z hint: 
+2022-09-14T05:40:24.0091139Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2022-09-14T05:40:24.0091647Z hint: 'development'. The just-created branch can be renamed via this command:
+2022-09-14T05:40:24.0091945Z hint: 
+2022-09-14T05:40:24.0092212Z hint: 	git branch -m <name>
+2022-09-14T05:40:24.0101365Z Initialized empty Git repository in /home/runner/work/Danlachapelle/Danlachapelle/.git/
+2022-09-14T05:40:24.0115329Z [command]/usr/bin/git remote add origin https://github.com/Danlachapelle/Danlachapelle
+2022-09-14T05:40:24.0181279Z ##[endgroup]
+2022-09-14T05:40:24.0181806Z ##[group]Disabling automatic garbage collection
+2022-09-14T05:40:24.0190071Z [command]/usr/bin/git config --local gc.auto 0
+2022-09-14T05:40:24.0230805Z ##[endgroup]
+2022-09-14T05:40:24.0231959Z ##[group]Setting up auth
+2022-09-14T05:40:24.0242572Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2022-09-14T05:40:24.0293593Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2022-09-14T05:40:24.0820586Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2022-09-14T05:40:24.0866558Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2022-09-14T05:40:24.1231049Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2022-09-14T05:40:24.1286133Z ##[endgroup]
+2022-09-14T05:40:24.1287129Z ##[group]Fetching the repository
+2022-09-14T05:40:24.1303395Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +6b15b2123e2ece4176351979702f18d349ffa4e7:refs/remotes/origin/main
+2022-09-14T05:40:24.7975671Z remote: Enumerating objects: 6, done.        
+2022-09-14T05:40:24.7976824Z remote: Counting objects:  16% (1/6)        
+2022-09-14T05:40:24.7977556Z remote: Counting objects:  33% (2/6)        
+2022-09-14T05:40:24.7978004Z remote: Counting objects:  50% (3/6)        
+2022-09-14T05:40:24.7978711Z remote: Counting objects:  66% (4/6)        
+2022-09-14T05:40:24.7979208Z remote: Counting objects:  83% (5/6)        
+2022-09-14T05:40:24.7979697Z remote: Counting objects: 100% (6/6)        
+2022-09-14T05:40:24.7980142Z remote: Counting objects: 100% (6/6), done.        
+2022-09-14T05:40:24.7980772Z remote: Compressing objects:  25% (1/4)        
+2022-09-14T05:40:24.7981247Z remote: Compressing objects:  50% (2/4)        
+2022-09-14T05:40:24.7981779Z remote: Compressing objects:  75% (3/4)        
+2022-09-14T05:40:24.7982227Z remote: Compressing objects: 100% (4/4)        
+2022-09-14T05:40:24.7982738Z remote: Compressing objects: 100% (4/4), done.        
+2022-09-14T05:40:24.7983857Z remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0        
+2022-09-14T05:40:24.8100387Z From https://github.com/Danlachapelle/Danlachapelle
+2022-09-14T05:40:24.8103454Z  * [new ref]         6b15b2123e2ece4176351979702f18d349ffa4e7 -> origin/main
+2022-09-14T05:40:24.8137488Z ##[endgroup]
+2022-09-14T05:40:24.8138682Z ##[group]Determining the checkout info
+2022-09-14T05:40:24.8145285Z ##[endgroup]
+2022-09-14T05:40:24.8148668Z ##[group]Checking out the ref
+2022-09-14T05:40:24.8156906Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2022-09-14T05:40:24.8212265Z Switched to a new branch 'main'
+2022-09-14T05:40:24.8213685Z branch 'main' set up to track 'origin/main'.
+2022-09-14T05:40:24.8252888Z ##[endgroup]
+2022-09-14T05:40:24.8282332Z [command]/usr/bin/git log -1 --format='%H'
+2022-09-14T05:40:24.8334943Z '6b15b2123e2ece4176351979702f18d349ffa4e7'
+2022-09-14T05:40:24.8705471Z ##[group]Run google-github-actions/auth@v0
+2022-09-14T05:40:24.8706127Z with:
+2022-09-14T05:40:24.8706448Z   token_format: access_token
+2022-09-14T05:40:24.8706994Z   workload_identity_provider: projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider
+2022-09-14T05:40:24.8707592Z   service_account: my-service-account@my-project.iam.gserviceaccount.com
+2022-09-14T05:40:24.8708037Z   create_credentials_file: true
+2022-09-14T05:40:24.8708416Z   export_environment_variables: true
+2022-09-14T05:40:24.8708720Z   cleanup_credentials: true
+2022-09-14T05:40:24.8709132Z   access_token_lifetime: 3600s
+2022-09-14T05:40:24.8709585Z   access_token_scopes: https://www.googleapis.com/auth/cloud-platform
+2022-09-14T05:40:24.8709958Z   retries: 0
+2022-09-14T05:40:24.8710281Z   id_token_include_email: false
+2022-09-14T05:40:24.8710650Z env:
+2022-09-14T05:40:24.8710897Z   PROJECT_ID: 
+2022-09-14T05:40:24.8711221Z   GAR_LOCATION: us-central1
+2022-09-14T05:40:24.8711657Z   GKE_CLUSTER: cluster-1
+2022-09-14T05:40:24.8711946Z   GKE_ZONE: us-central1-c
+2022-09-14T05:40:24.8712346Z   DEPLOYMENT_NAME: gke-test
+2022-09-14T05:40:24.8712696Z   REPOSITORY: samples
+2022-09-14T05:40:24.8712971Z   IMAGE: static-site
+2022-09-14T05:40:24.8713281Z ##[endgroup]
+2022-09-14T05:40:25.1233504Z Created credentials file at "/home/runner/work/Danlachapelle/Danlachapelle/gha-creds-91d4354b8d03f47f.json"
+2022-09-14T05:40:25.1234358Z 
+2022-09-14T05:40:25.1260596Z 
+2022-09-14T05:40:25.2793745Z ##[error]google-github-actions/auth failed with: retry function failed after 1 attempt: failed to generate Google Cloud federated token for projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider: (400) {"error":"invalid_target","error_description":"The target service indicated by the \"audience\" parameters is invalid. This might either be because the pool or provider is disabled or deleted or because it doesn't exist."}
+2022-09-14T05:40:25.3072986Z Post job cleanup.
+2022-09-14T05:40:25.3988125Z Removed exported credentials at "/home/runner/work/Danlachapelle/Danlachapelle/gha-creds-91d4354b8d03f47f.json".
+2022-09-14T05:40:25.4080472Z Post job cleanup.
+2022-09-14T05:40:25.5581101Z [command]/usr/bin/git version
+2022-09-14T05:40:25.5639609Z git version 2.37.3
+2022-09-14T05:40:25.5699619Z Temporarily overriding HOME='/home/runner/work/_temp/2f456a02-5d47-4515-8ef1-d5819b974f89' before making global git config changes
+2022-09-14T05:40:25.5701028Z Adding repository directory to the temporary git global config as a safe directory
+2022-09-14T05:40:25.5710226Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Danlachapelle/Danlachapelle
+2022-09-14T05:40:25.5763673Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2022-09-14T05:40:25.5833242Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2022-09-14T05:40:25.6152132Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2022-09-14T05:40:25.6191613Z http.https://github.com/.extraheader
+2022-09-14T05:40:25.6207555Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2022-09-14T05:40:25.6257858Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2022-09-14T05:40:25.6828538Z Cleaning up orphan processes
